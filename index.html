@@ -41,14 +41,14 @@
     </style>
   </head>
   <body>
-    <h2>Masukkan Nama Anda untuk Kartu Ucapan</h2>
+    <h2>Masukkan Nama Antum untuk Kartu Ucapan Corthure</h2>
     <input type="text" id="username" placeholder="Masukkan Nama Anda" />
     <button onclick="generateCard()">Tampilkan</button>
 
     <div id="card-container">
       <img id="card" src="eid-corthure.png" alt="Kartu Idul Fitri" />
       <div id="name-container">
-        <p id="name">CORTHURE GENERATION</p>
+        <p id="name">Nama Antum</p>
       </div>
     </div>
 
@@ -60,7 +60,7 @@
         let name = document.getElementById("username").value;
         document.getElementById("name").innerText = name
           ? name
-          : "CORTHURE GENERATION";
+          : "Nama Antum";
       }
 
       function downloadCard() {
@@ -68,7 +68,7 @@
           (canvas) => {
             let link = document.createElement("a");
             link.href = canvas.toDataURL("image/png");
-            link.download = "kartu-idulfitri.png";
+            link.download = "Bithoqoh Eid Corthure.png";
             link.click();
           }
         );
